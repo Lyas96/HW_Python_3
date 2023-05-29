@@ -7,3 +7,19 @@
 # 1 2 3 4 5
 # 6
 # -> 5
+n = int(input("Введите количество элементов в массиве: "))
+print(n)
+massive = list()
+for i in range(1, (n + 1)):
+    massive.append(i)
+print(*massive)
+x = int(input("Введите число Х: "))
+print(x)
+min_num = (x - massive[0])
+index = 0
+for i in range(1, len(massive)):
+  count = (x - massive[i])
+  if count < min_num:
+     min_num = count
+     index = i
+print(massive[i])
