@@ -22,3 +22,12 @@
 # *Пример:*
 # ноутбук
 # 12
+count = 0
+dict = {'aeioulnstrавеинорст': 1, 'dgдклмпу': 2, 'bcmpбгёья': 3, 'fhvwyйы': 4, 'kжзхцч': 5, 'jxшэю': 8, 'qzфщъ': 10}
+word = input("Введите слово: ").lower()
+for i in word:
+    for key, value in dict.items():
+        if i in key:
+          count += value
+print(f'Стоймость введенного слова {count}')
+
